@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid" id="header">
         <div class="navbar-header">
@@ -25,4 +26,43 @@
        </form>
         </div>
       </div>
+=======
+<div class = "header">
+
+<div id="banner-box" class="sad">
+		
+			<div class="logo-box" >
+			</div>
+
+			<div class = "search-control">
+			
+				<div class="banner-search">
+					<form class="banner-search-form">
+								<input type="text" placeholder="Search" name="query"/>
+								<input type="submit" value=""/>
+					</form>
+
+				</div>
+			
+			
+				<div class="banner-controls">
+					<ul class="user-controls">
+						<li>11126493</li>
+						<li>aramsembranoo</li>
+						
+					</ul>
+				</div>
+
+
+				<div class="clearfix">
+
+				</div>
+			</div>
+
+
+		</div>	
+
+
+
+>>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
 </div>

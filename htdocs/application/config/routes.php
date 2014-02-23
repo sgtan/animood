@@ -38,9 +38,13 @@
 |
 */
 
+<<<<<<< HEAD
 $route['default_controller'] = "main";
 
 
+=======
+$route['default_controller'] = "sites";
+>>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
 $route['404_override'] = '';
 
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="utf-8"/>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +32,12 @@
     <link rel="stylesheet" href ="http://localhost/style/styles.css" style="text/css"/> 
 
         <title><?php echo $title; ?></title>
+=======
+	<meta charset="utf-8"/>
+	<title><?php echo $title; ?></title>
+
+		<link rel="stylesheet" href="http://localhost/style/styles.css" style="text/css"/>
+>>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
 </head>
 <body>
 

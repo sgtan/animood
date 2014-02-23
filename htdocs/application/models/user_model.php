@@ -2,6 +2,7 @@
 
 class User_Model extends CI_Model{
 
+<<<<<<< HEAD
 	
 	public function getUserInfo($idnumber, $password){
 	   $this->db->select('idnumber, password, firstname, lastname, type');
@@ -44,3 +45,19 @@ class User_Model extends CI_Model{
 
 }
 ?>
+=======
+	public function getAll(){
+		
+		$query =$this->db->query("SELECT * FROM student");
+	
+		return $query->result();
+	}
+
+
+	public function insert2($data){
+		$this->db->insert("student", $data);
+
+	}
+	
+}
+>>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
