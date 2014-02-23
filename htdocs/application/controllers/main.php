@@ -17,24 +17,42 @@ class Main extends CI_Controller {
 
 	public function login(){
 		$data['title'] = 'Animood';
-		$data['color'] = '#3b243f';
+
+		$this->load->model('mood_model');
+		$data['mood'] = $this->mood_model->getMoodById($this->mood_model->getMoodOfTheDay());
+
+
+		$data['color'] = $this->mood_model->getMoodColorById($this->mood_model->getMoodOfTheDay());
+
+
 		$data['fontColor'] = '#ffffff';
-		$data['jumboColor'] = 'rgba(255,255,255,0.1)';
-		$data['mood'] = 'AWESOME';
+		$data['jumboColor'] = 'rgba(0,0,0,0.3)';
 		$this->load->view("login_view", $data);
 	}
 
 	public function main()
-    {
+    {	
 
+		$this->load->model('mood_model');
+		$data['color'] = $this->mood_model->getMoodColorById($this->mood_model->getMoodOfTheDay());
+        
         $data['title'] = "Home";
         $data['idnum'] =  $this->session->userdata('idnum');
  		$data['name'] =  $this->session->userdata('firstname'). " ".  $this->session->userdata('lastname');
  		$data['type'] = $this->session->userdata('type');
 
 		$this->load->model('class_model');
-   		$data['course']  = $this->class_model->getCourses($data['idnum'], 21314);
+   		$data['courses']  = $this->class_model->getCourses($data['idnum'], 21314);
 
+   		$this->load->model('organization_model');
+ 		$data['organizations']  = $this->organization_model->getOrgs($data['idnum']);  
+
+ 		if($data['type'] == 2){
+   			$this->load->model('facultymain_model');
+   			$data['awesome'] = $this->facultymain_model->getMoodID1( $data['idnum']);
+   			$data['contented'] = $this->facultymain_model->getMoodID2( $data['idnum']);
+   			
+   		}
 
         $this->load->view("head", $data);
 		$this->load->view("header");
@@ -43,20 +61,7 @@ class Main extends CI_Controller {
         
     }
 
-    public function home(){
-        $this->load->view('student_main.php');
-
-	}
-
-	public function evaluation(){
-		$courseCode = $this->input->get('courseCode');
-		//getgourse from db lagay sa data
-		$this->load->model('evaluation_model'); 
-		$data['question'] = $this->evaluation_model->getEvalQuestions($this->session->userdata('type')); 
-		$data['recommendation'] = $this->evaluation_model->getEvalRecom($this->session->userdata('type'));
-  		$this->load->view('evaluation.php', $data);
-
-	}
+  
 
 
 

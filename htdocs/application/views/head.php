@@ -8,14 +8,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-            <script src="http://localhost/js/jquery-1.11.0.min.js"></script>
+    <script src="http://localhost/js/jquery-1.11.0.min.js"></script>
     <script src="http://localhost/js/bootstrap.min.js"></script>
-     <script src="http://localhost/script/script.js"></script>
+    <script src="http://localhost/script/script.js"></script>
     <script src="http://localhost/js/sb-admin.js"></script>
     <script src="http://localhost/js/jquery.metisMenu.js"></script>
-   
+    <script src="http://localhost/js/highcharts.js"></script>
 
-    
+   
     <!-- Bootstrap core CSS -->
     <link href="http://localhost/css/bootstrap.min.css" rel="stylesheet">
 

@@ -6,6 +6,9 @@ function init(){
     $('#register-btn').click(validateReg);
     $('#login-btn').click(validateLogIn);
      numberRestrict();
+
+     CheckPassword();
+
 }
 
 
@@ -30,32 +33,43 @@ function isEmpty(form, field){
     
     if (x == null || x == ""){
        
-        $('#'+field).css('background-color', '#faa5a5');
+        $('#'+field).css('border-color', '#ff0000');
+
         $('#'+field).off('focus');
         $('#'+field).one('focus', function(){
             $(this).css('background-color', '#ffffff');
+        
+          
         });
         return true;
+    }
+    else{
+
+        $('#'+field).css('border-color', 'black');
     }
     
     return false;
 }       
                 
 function validateReg(event){
-    var hasEmpty = false;
+    var isInvalid = false;
     
     if(isEmpty('register-form', 'firstname'))
-      hasEmpty=true;
+      isInvalid=true;
     if(isEmpty('register-form', 'lastname'))
-        hasEmpty=true;
+        isInvalid=true;
     if(isEmpty('register-form', 'email'))
-        hasEmpty=true;
+        isInvalid=true;
     if(isEmpty('register-form', 'regidnum'))
-        hasEmpty=true;
+        isInvalid=true;
     if(isEmpty('register-form', 'regpassword'))
-      hasEmpty=true;  
-    
-    if(hasEmpty){
+      isInvalid=true;  
+  /*if(isEmpty('register-form', 'confirmPassword'))
+      isInvalid=true; */
+
+
+
+    if(isInvalid){
 
         event.preventDefault();
         return false;
@@ -63,14 +77,14 @@ function validateReg(event){
 }
         
 function validateLogIn(event){
-    var  hasEmpty=false;
+    var  isInvalid=false;
 
     if(isEmpty('login-form', 'idnum'))
-        hasEmpty=true;
+        isInvalid=true;
     if(isEmpty('login-form', 'password'))
-         hasEmpty=true;
+         isInvalid=true;
         
-    if(hasEmpty){
+    if(isInvalid){
         event.preventDefault();
         return false;
     }

@@ -6,8 +6,14 @@
 	</div>
 
 	<div id="main-content">
-			<?php include('/application/views/student_main.php');?>
+		<?php
+		if($type ==1)
+			 include('/application/views/student_main.php');
+		else if($type ==2)
+			include('/application/views/faculty_main.php');
+		?>
 	</div>
+
 
 
 	</div>

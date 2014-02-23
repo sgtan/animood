@@ -7,14 +7,12 @@ body {
   padding-top: 50px;
 }
 
-#header{
-	background-color: #3b243f;
-}
+
 
 ul#nav-info li{ 
-	margin: 20px 10px; 
-	color: white; 
-	padding: 5px 5px; 
+  margin: 20px 10px; 
+  color: white; 
+  padding: 5px 5px; 
 }
 /*
  * Global add-ons
@@ -24,22 +22,25 @@ ul#nav-info li{
 .glyphicon-chevron-down{
 float:right;
 }
+.glyphicon-chevron-left{
+float:right;
+}
 .sub-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
 
 div#search-box{
-	margin: 15px auto;
-	padding: 5px 5px;
+  margin: 15px auto;
+  padding: 5px 5px;
 }
 
 div#nav-sidebar{
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 div#main-content{
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 
@@ -70,11 +71,11 @@ div#main-content{
   /* Wrappers */
 
   #wrapper {
-	padding-left: 225px;
+  padding-left: 225px;
   }
 
   #page-wrapper {
-	padding: 15px 25px;
+  padding: 15px 25px;
   }
 
   /* Side Nav */
@@ -86,6 +87,13 @@ div#main-content{
   margin-right: -21px; /* 20px padding + 1px border */
   margin-bottom: 20px;
 }
+
+.navbar-default {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -5px;
+}
+
 .nav-list > li > a {
   padding-left: 20px;
   padding-right: 20px;
@@ -100,6 +108,11 @@ div#main-content{
   padding: 20px;
 
 }
+
+.image{
+  width:100%;
+}
+
 @media (min-width: 768px) {
   .main {
 
@@ -111,29 +124,64 @@ div#main-content{
   margin-top: 0;
 }
 
-ul.emotion li{
-	margin: auto 7px;
+.emotion li{
+  position: relative;
+  margin-left: 30px;
 }
 
 ul.emotion li:hover{
-   cursor: pointer; cursor: hand;
+   cursor: pointer; 
+   cursor: hand;
+}
+
+ul.emotion{
+  margin-right: 63px;
+}
+
+ul.emotion-label{
+  margin-top: -30px;
+  margin-right: 5px;
+}
+
+.emotion-label li{
+  position: relative;
+  margin-top: -10px;
+  margin-left: 13px;
+  margin-right: 2px;
 }
 
 div.container h1, h2{
-  text-align: center;
+  margin: auto 45px;
+  margin-bottom: 12px;
+}
+
+#eval-label{
+  margin-top: -8px;
 }
 
 div.comments-box{
-	margin: auto 45px;
+  margin: auto 45px;
+}
+
+.form-control{
+  resize:none;
 }
 
 button#submit{
-	margin-top: 10px;
-	float: right;
+  margin-top: 10px;
+  float: right;
+  margin-right: 40px;
+  background: #f0ad4e;
+  color: #FFFFFF;
 }
 
-div.button-group{
-	margin: auto 200px;
+button#submit:hover{
+  background: #ed9c28;
+}
+
+div.check-group{
+  margin: auto 125px;
+  margin-bottom: 5px;
 }
 
 /*

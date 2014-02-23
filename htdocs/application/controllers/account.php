@@ -43,7 +43,7 @@ class Account extends CI_Controller {
 
 	public function register(){
 	
-	$inputs = $this->input->post(NULL, TRUE);
+		$inputs = $this->input->post(NULL, TRUE);
 		$regSuccess = $this->user_model->register($inputs);
 		
 		if(is_bool($regSuccess) == TRUE)
