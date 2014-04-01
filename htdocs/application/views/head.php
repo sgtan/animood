@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
     <meta charset="utf-8"/>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,6 +35,15 @@
     <link rel="stylesheet" href ="http://localhost/style/styles.css" style="text/css"/> 
 
         <title><?php echo $title; ?></title>
+<<<<<<< HEAD
+=======
+=======
+	<meta charset="utf-8"/>
+	<title><?php echo $title; ?></title>
+
+		<link rel="stylesheet" href="http://localhost/style/styles.css" style="text/css"/>
+>>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
+>>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 </head>
 <body>
 

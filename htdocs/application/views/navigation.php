@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 
  <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
@@ -116,4 +120,40 @@
   
 
 
+<<<<<<< HEAD
+=======
+=======
+<div class = "navigation">
+			<div class="nav-div">
+				<ul id="nav-menu">
+					<li> 
+						Home
+					</li>
+					<li>
+						Logout
+					</li>
+					<li data-toggle="subjects" class="menu-toggle">SUBJECTS
+						<ul class="sub-menu" id="subjects" style="display:none">
+							<li>WEBAPPS</li>
+							<li>ALGOCOM</li>
+							<li>HCIFACE</li>
+						</ul>
+					</li>
+					<li data-toggle="organizations" class="menu-toggle">ORGANIZATIONS
+						<ul class="sub-menu" id="organizations" style="display:none">
+							<li>HTG</li>
+							<li>LSDC</li>
+							<li>La Salle Sports Commission of De La SAlle University</li>
+						</ul>
+					</li>
+					
+				</ul>
+			</div>
+				<div class="clearfix"> <!-- pag may float laging may clearfix -->                                                                                                     
+				</div>
+		</div>
+
+</div>
+>>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
+>>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 

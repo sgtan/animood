@@ -50,7 +50,15 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
+<<<<<<< HEAD
 $db['default']['password'] = '';
+=======
+<<<<<<< HEAD
+$db['default']['password'] = '1234';
+=======
+$db['default']['password'] = '';
+>>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
+>>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 $db['default']['database'] = 'animood';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';

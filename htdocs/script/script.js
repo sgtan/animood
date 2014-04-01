@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 $(document).ready(init);
 
 
@@ -152,3 +156,19 @@ function officeClick(){
 
 
 
+<<<<<<< HEAD
+=======
+=======
+window.onload=centerize;
+window.onresize = centerize;
+
+function centerize (){
+	var box = document.getElementById("login-box");
+	var wHeight = window.innerHeight/2;
+	var vHeight = 150;
+	var nTop = wHeight-vHeight;
+	box.style.top = nTop+"px";
+
+	}
+>>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
+>>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
