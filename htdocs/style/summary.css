@@ -1,0 +1,29 @@
+#mood-pie{
+	width: 500px; 
+	height: 400px; 
+}
+
+#recommendation{
+	width: 500px; 
+	height: 400px; 
+	margin-left: 10px;
+}
+
+.list{
+  float: left;
+}
+
+.list li{
+  text-align: left;
+  margin-left: 35px;
+}
+
+.jumbotron {
+	margin-top: 15px;
+    border-radius: 6px;
+}
+
+.comment-label{
+	margin-top: -40px;
+	margin-left: -20px;
+}
