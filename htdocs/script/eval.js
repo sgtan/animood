@@ -33,7 +33,7 @@ function clickImage(event){
 
 function getQuestions(){
   question = [];
-  for(i=1; i<=$('h2.question').length; i++){
+  for(i=1; i<=$('h3.question').length; i++){
     var string1 = "#question";
     var string2 = string1.concat(i);
     question[i-1] = $(string2).attr('questionid');
@@ -43,7 +43,7 @@ function getQuestions(){
 
 function getAnswer(){
   answer = [];
-  for(i=0; i<$('h2.question').length; i++){
+  for(i=0; i<$('h3.question').length; i++){
     var string1 = "#emotion";
     var string2 = string1.concat(i+1);
     var element = $(string2).children();
@@ -90,13 +90,13 @@ function getDateTime() {
 
 function clickSubmit(){
   $('#submit').click(function(){
-    if($('h1#eval-label').attr('type')==1)
+    if($('h3#eval-label').attr('type')==1)
       courseAjax();
-    else if($('h1#eval-label').attr('type')==2)
+    else if($('h3#eval-label').attr('type')==2)
       orgAjax();
-    else if($('h1#eval-label').attr('type')==3)
+    else if($('h3#eval-label').attr('type')==3)
       eventAjax();
-    else if($('h1#eval-label').attr('type')==4)
+    else if($('h3#eval-label').attr('type')==4)
       officeAjax();
   });  
 }
@@ -105,8 +105,8 @@ function courseAjax(){
   question = getQuestions();
   answer = getAnswer();
   var comment = $('textarea#comment').val();
-  var courseCode = $('h1#eval-label').attr('courseCode');
-  var section = $('h1#eval-label').attr('section');
+  var courseCode = $('h3#eval-label').attr('courseCode');
+  var section = $('h3#eval-label').attr('section');
   var type = 1;
   var timestamp = getDateTime();
 
@@ -122,8 +122,9 @@ function courseAjax(){
       'type' : type
     },
     type: 'post',
-    success: ajaxSuccess,
+    success: courseAjaxSuccess,
     error: ajaxError,
+    dataType: 'json',
     url: 'http://localhost/index.php/content/eval_summary'
   });
 
@@ -133,7 +134,7 @@ function orgAjax(){
   question = getQuestions();
   answer = getAnswer();
   var comment = $('textarea#comment').val();
-  var orgCode = $('h1#eval-label').attr('orgCode');
+  var orgCode = $('h3#eval-label').attr('orgCode');
   var type = 2;
   var timestamp = getDateTime();
 
@@ -148,8 +149,9 @@ function orgAjax(){
       'type' : type
     },
     type: 'post',
-    success: ajaxSuccess,
+    success: courseAjaxSuccess,
     error: ajaxError,
+    dataType: 'json',
     url: 'http://localhost/index.php/content/eval_summary'
   })
 }
@@ -158,7 +160,7 @@ function eventAjax(){
   question = getQuestions();
   answer = getAnswer();
   var comment = $('textarea#comment').val();
-  var eventid = $('h1#eval-label').attr('eventid');
+  var eventid = $('h3#eval-label').attr('eventid');
   var type = 3;
   var timestamp = getDateTime();
 
@@ -173,8 +175,9 @@ function eventAjax(){
       'type' : type
     },
     type: 'post',
-    success: ajaxSuccess,
+    success: courseAjaxSuccess,
     error: ajaxError,
+    dataType: 'json',
     url: 'http://localhost/index.php/content/eval_summary'
   });
 
@@ -184,7 +187,7 @@ function officeAjax(){
   question = getQuestions();
   answer = getAnswer();
   var comment = $('textarea#comment').val();
-  var officeid = $('h1#eval-label').attr('officeid');
+  var officeid = $('h3#eval-label').attr('officeid');
   var type = 4;
   var timestamp = getDateTime();
 
@@ -199,10 +202,16 @@ function officeAjax(){
       'type' : type
     },
     type: 'post',
-    success: ajaxSuccess,
+    success: courseAjaxSuccess,
     error: ajaxError,
+    dataType: 'json',
     url: 'http://localhost/index.php/content/eval_summary'
   });
+}
+
+function courseAjaxSuccess(data, textStatus){
+    $('#header-bar').css('background-color', data.color);
+    $('#main-content').html(data.content);
 }
 
 function ajaxSuccess(data, textStatus){

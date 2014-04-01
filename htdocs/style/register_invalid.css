@@ -1,0 +1,77 @@
+body{
+	cursor:default;
+}
+
+div.container{
+	min-width: 510px;
+}
+
+div.banner{
+	text-align: center;
+	font-size: 20px;
+	margin: 100px 0 20px;
+		
+}
+
+
+div.jumbotron{
+	margin-top: 150px;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.15);
+	padding:20px !important;
+
+}
+
+img#login-title{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+
+}
+
+
+
+div#register-form-box h5{
+	color: #fff;
+	margin-top: 0;
+	font-family: Arial;
+	text-align: center;
+}
+
+form#register-form .form-group{
+	margin: 5px 0 7px;
+
+}
+
+
+.adj-form :first-child{
+	float: left;
+
+}
+
+.adj-form :nth-child(2){
+	float: right;
+
+}
+
+input.adj-input{
+	width: 49%;
+
+}
+
+form#register-form :nth-child(3) :first-child {
+	width: 32%;
+
+}
+
+form#register-form :nth-child(3) :nth-child(2) {
+	width: 66%;
+
+}
+
+input#register-btn{
+	float: right;
+	width: 30%;
+}
+
+

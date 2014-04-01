@@ -1,0 +1,47 @@
+body{
+	cursor:default;
+}
+
+div.container{
+	min-width: 365px;
+}
+
+
+div.jumbotron{
+	margin-top: 150px;
+	height: 310px;;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding:20px !important;
+	
+
+}
+
+img#login-title{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+
+}
+
+
+input#login-btn{
+	float: right;
+	width: 30%;
+	
+}
+
+div#login-form-box h5{
+	color: #fff;
+	margin-top: 0;
+	font-family: Arial;
+	text-align: center;
+}
+
+input#{
+	margin-top: 
+
+}
+
+
+
+

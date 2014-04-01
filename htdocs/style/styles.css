@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 /*
  * Base structure
  */
@@ -11,24 +7,14 @@ body {
   padding-top: 50px;
 }
 
-<<<<<<< HEAD
 
-
-ul#nav-info li{ 
-  margin: 20px 10px; 
+  ul#nav-info li{  
   color: white; 
-  padding: 5px 5px; 
-=======
-#header{
-	background-color: #3b243f;
+     
+    overflow:auto;
+
 }
 
-ul#nav-info li{ 
-	margin: 20px 10px; 
-	color: white; 
-	padding: 5px 5px; 
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
-}
 /*
  * Global add-ons
  */
@@ -37,19 +23,15 @@ ul#nav-info li{
 .glyphicon-chevron-down{
 float:right;
 }
-<<<<<<< HEAD
 .glyphicon-chevron-left{
 float:right;
 }
-=======
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 .sub-header {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
 
 div#search-box{
-<<<<<<< HEAD
   margin: 15px auto;
   padding: 5px 5px;
 }
@@ -60,18 +42,6 @@ div#nav-sidebar{
 
 div#main-content{
   margin-top: 20px;
-=======
-	margin: 15px auto;
-	padding: 5px 5px;
-}
-
-div#nav-sidebar{
-	margin-top: 10px;
-}
-
-div#main-content{
-	margin-top: 20px;
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 }
 
 
@@ -94,6 +64,11 @@ div#main-content{
     border-right: 1px solid #eee;
     overflow-y: auto;
   }
+  ul#nav-info li{ 
+  margin: 20px 10px;
+
+  padding: 5px 5px; 
+}
 }
 
 
@@ -102,21 +77,13 @@ div#main-content{
   /* Wrappers */
 
   #wrapper {
-<<<<<<< HEAD
   padding-left: 225px;
   }
 
   #page-wrapper {
   padding: 15px 25px;
-=======
-	padding-left: 225px;
   }
-
-  #page-wrapper {
-	padding: 15px 25px;
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
-  }
-
+}
   /* Side Nav */
 
 
@@ -126,7 +93,6 @@ div#main-content{
   margin-right: -21px; /* 20px padding + 1px border */
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
 
 .navbar-default {
   margin-left: -20px;
@@ -134,8 +100,6 @@ div#main-content{
   margin-top: -5px;
 }
 
-=======
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 .nav-list > li > a {
   padding-left: 20px;
   padding-right: 20px;
@@ -150,14 +114,11 @@ div#main-content{
   padding: 20px;
 
 }
-<<<<<<< HEAD
 
 .image{
   width:100%;
 }
 
-=======
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 @media (min-width: 768px) {
   .main {
 
@@ -169,44 +130,15 @@ div#main-content{
   margin-top: 0;
 }
 
-<<<<<<< HEAD
-.emotion li{
+ul.emotion li{
   position: relative;
-  margin-left: 30px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 ul.emotion li:hover{
    cursor: pointer; 
    cursor: hand;
-}
-
-ul.emotion{
-  margin-right: 63px;
-}
-
-ul.emotion-label{
-  margin-top: -30px;
-  margin-right: 5px;
-}
-
-.emotion-label li{
-  position: relative;
-  margin-top: -10px;
-  margin-left: 13px;
-  margin-right: 2px;
-}
-
-div.container h1, h2{
-  margin: auto 45px;
-  margin-bottom: 12px;
-}
-
-#eval-label{
-  margin-top: -8px;
-}
-
-div.comments-box{
-  margin: auto 45px;
 }
 
 .form-control{
@@ -217,7 +149,7 @@ button#submit{
   margin-top: 10px;
   float: right;
   margin-right: 40px;
-  background: #f0ad4e;
+  background: #EB3110;
   color: #FFFFFF;
 }
 
@@ -226,33 +158,7 @@ button#submit:hover{
 }
 
 div.check-group{
-  margin: auto 125px;
   margin-bottom: 5px;
-=======
-ul.emotion li{
-	margin: auto 7px;
-}
-
-ul.emotion li:hover{
-   cursor: pointer; cursor: hand;
-}
-
-div.container h1, h2{
-  text-align: center;
-}
-
-div.comments-box{
-	margin: auto 45px;
-}
-
-button#submit{
-	margin-top: 10px;
-	float: right;
-}
-
-div.button-group{
-	margin: auto 200px;
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 }
 
 /*
@@ -272,462 +178,3 @@ div.button-group{
 .placeholder img {
   border-radius: 50%;
 }
-<<<<<<< HEAD
-=======
-=======
-body{
-	margin: 0;
-	padding:0;
-	
-}
-
-body,input,button{
-	font-family: Arial;
-}
-
-
-form.banner-search-form input[type="text"]{
-	padding: 5px;  
-	border: none;/*border: 1px solid white;*/
-	outline: none;
-	background-color: rgba(255,255,255,0);
-	color: black;
-}
-
-form.banner-search-form{
-	vertical-align: middle;
-
-}
-
-div.sad .banner-search-form{
-	background-color: white;
-	display: inline-block;
-}
-div.banner-search{
-	padding: 15px 0;
-
-}
-
-
-
-
-
-div.sad{
-	background-color: #184b6b;
-	
-
-}
-
-div.sad a, div.sad{
-	color:white;
-
-}
-
-div.logo-box{
-	float:left;
-	background-image: url("http://localhost/image/animoodtransparentsmall.png");
-	background-size: 100% auto;
-	height: 36px;
-	width: 216px;
-	margin: 10px 10px;
-	margin-top: 52px;
-}
-div.search-control{
-	display: inline-block;
-	float: right;
-}
-
-div.banner-search{
-	height: 20px;
-	margin-right:100px;
-}
-div.banner-controls{
-	
-	margin-right:80px;
-}
-
-
-div.user-controls{
-	height: 120px;
-	margin:0;
-}
-
-
-ul.user-controls{
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-ul.user-controls li{
-	margin:0;
-	float:left;
-}
-
-ul.user-controls li{
-	float:left;
-	display: block;
-	line-height: 70px;
-	padding:0 10px;
-}
-ul.user-controls li:first-child{
-	padding-left: 0px;
-}
-
-div#banner-box{
-	height:100px;
-}
-
-div.banner-controls a{
-	text-decoration: none;	
-}
-
-div.clearfix{
-	clear: both;
-}
-
-
-
-div.navigation{ 
-	width: 250px;
-	background-color: #ccc;
-
-	margin-top:0px; 
-	float:left;
-	display: inline-block;
-
-}
-
-ul#nav-menu{
-	list-style-type: none;
-	width: 250px;
-	margin: 0px;
-	padding: 0px; 
-
-}
-
-ul#nav-menu > li{
-	padding: 5px; 
-	border-bottom: 1px solid #fff; 
-	margin-left: 10px;
-}
-
-div.nav-div{
-	margin-top: 0;
-	width:250px;
-	float:left;
-}
-
-
-/*starts here*/
-
-div.content{
-
-	margin: auto 100px;
-	display: inline-block;
-
-	
-	width: 900px;
-}
-
-div#content-box{
-	float: left;
-	background-color: rgba(0,0,0,0.4);
-	
-	margin: 0 auto;
-	position: relative;
-	color: #FFF;
-	height: 100%;
-}
-
-div.label-box{
-	background-color: rgba(0,0,0,0.4);
-	height: 75px;
-	margin: 0 auto;
-	position: relative;
-	color: #FFF;
-}
-
-div#content-box h1{
-	padding-top: 10px;
-	margin:10;
-	text-align: center;
-
-}
-
-div.evaluation-form{
-	background-color: rgba(0,0,0,0);
-	width: 900px;
-	height: 100%;
-	margin: 0 auto;
-	position: relative;
-	color: #FFF;
-}
-
-div.evaluation-form h1{
-	margin-top: 5px;
-}
-
-form.comment-form input[type="text"]{
-	width: 700px;
-	height: 75px;
-	margin-left: 75px;
-	border: none;
-	outline: none;
-	background-color: rgba(255,255,255,230);
-	color: black;
-}
-
-form.comment-form input[type="submit"]{
-	width: 70px;
-	height:23px;
-	margin-bottom: 50px; 
-	margin-right: 2px;
-	
-}
-
-div.emotion-box{
-	float: center;
-	display: inline-block;
-
-}
-
-ul#emotion{
-	position: relative;
-	margin: 0  61px;
-}
-
-div.comments-box{
-	margin: 0px auto;
-	position: relative;
-	left: 110px;
-}
-
-/*asksajdhsakjd
-
-
-
-
-
-
-
-*/
-
-
-body.login{
-	background-image: url("../image/happy3.jpg"); /* .. means lalabas ng 1 folder */
-	background-size: 100% auto; /* parameters = x and y. */
-
-}
-
-div#login-box{
-	background-color: rgba(0,0,0,0.4);
-	width: 700px;
-	height: 340px;
-	margin: 0 auto;
-	margin-top: 30px;
-	position: relative;
-	color: #FFF;
-
-}
-
-div#login-box form.login-form{
-	width:300px;
-	margin:0 auto;
-
-}
-
-div#login-box form.search-form{
-	float:right;
-	display: inline-block;
-	margin-bottom: 5px;
-	margin-top: 10px;
-	margin-right: 10px;
-	padding-right: 2px;
-	position:relative;
-	background-color: rgba(255,255,255,0.4);
-}
-
-div.sign-up{
-	margin-left: 20px;
-	padding-bottom: 20px;
-	font-size: 23px;
-	height: 100px;
-	margin-bottom: -50px;
-}
-
-div.animood{
-	background-image: url("../image/ANIMOODtransparent.png");
-	background-repeat: no-repeat;
-	background-position: bottom right;
-	padding-top: 65px;
-	margin-right: 20px;
-	
-}
-
-div.search-box{
-	display: inline-block;
-	float: right;
-	margin-top: 10px;
-	margin-right: 11px;
-	width: 900px;
-	padding-bottom: 10px;
-}
-
-form.search-form input{
-	vertical-align:middle;
-	
-}
-
-form.search-form input[type="submit"]{
-	width: 25px;
-	height:25px;
-	margin-right: 2px;
-	background-image: url("../image/search.png");
-	background-color: transparent;
-	background-repeat: no-repeat;
-	background-position: center center;
-	border: none;
-}
-
-form.search-form input[type="text"]{
-	padding: 8px;  
-	border: none;/*border: 1px solid white;*/
-	outline: none;
-	width: 270px;
-	background-color: rgba(255,255,255,0);
-	color: black;
-}
-
-div#login{
-	margin-right: 20px;
-	width: 320px;
-	height: 155px;
-	float: right;
-	background-color: rgba(255, 255, 255, 0.2);
-	margin-top: 30px;
-	padding-bottom: -10px;
-}
-
-div#register{
-	margin-left: 20px;
-	width: 320px;
-	height: 195px;
-	float: left;
-	background-color: rgba(255, 255, 255, 0.2);
-	margin-top: -10px;
-}
-
-p.input-holder input[name="firstname"]{
-width: 127px;
-float: left;
-}
-
-p.input-holder input[name="lastname"]{
-width: 127px;
-float: right;
-}
-
-p.input-holder input[name="email"]{
-width: 280px;
-float: right;
-margin-top: 5px;
-}
-
-p.input-holder input[name="idnumber"]{
-width: 280px;
-float: left;
-margin-top: 5px;
-}
-
-p.input-holder input[name="password2"]{
-width: 194px;
-float: left;
-margin-top: 5px;
-
-}
-
-
-p.button-holder input[name = "registerBtn"]{
-background-color: rgba(255, 0, 0, 0.9);
-width: 80px;
-height: 36px;
-color: #fff;
-font-weight: bold;
-border: none;
-margin-left: 175px;
-float: right;
-margin-top: -37px;
-border-radius: 3px;
-}
-
-p.button-holder input[name = "registerBtn"]:hover{
-background-color: rgba(255, 44, 44, 0.9);
-
-}
-
-p.button-holder input[name = "loginBtn"]{
-background-color: rgba(31, 146, 0, 0.9);
-width: 80px;
-height: 37px;
-color: #fff;
-font-weight: bold;
-border: none;
-margin-left: 175px;
-float: right;
-margin-top: -47px;
-border-radius: 3px;
-margin-bottom: 15px;
-}
-
-p.button-holder input[name = "loginBtn"]:hover{
-background-color: rgba(50, 208, 7, 0.9);
-
-}
-
-
-p.input-holder input[name = "username"]{
-width: 280px;
-margin-top: 20px;
-
-}
-
-p.input-holder input[name = "password"]{
-width: 194px;
-margin-top: -10px;
-margin-bottom: 10px;
-float: left;
-
-}
-
-
-
-p.input-holder{
-	text-align: center;
-}
-
-p.input-holder input{
-	text-align: center;
-	width: 230px;
-	padding: 10px;  
-	border: none;/*border: 1px solid white;*/
-	outline: none;
-	background-color: rgba(0,0,0,0.4);
-	color: white;
-}
-
-
-
-div#login-box h1{
-
-	margin:0;
-	text-align: center;
-	font-size: 50px;
-
-}
-
-
-
-
->>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a

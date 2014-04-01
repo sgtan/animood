@@ -1,0 +1,119 @@
+
+
+/**** aram **/
+
+.main ul.list-group{
+
+margin: 60px;
+position: relative;
+
+}
+
+.main ul.list-group#group-prof{
+padding-top: 1px;
+margin-left: 30px;
+margin-right: 1px;
+width: 260px;
+
+float: right;
+position: absolute;
+top: 80px;
+
+
+}
+
+
+.main ul.list-group#group-org{
+padding-top: 1px;
+margin-left: 315px;
+margin-right: 1px;
+width: 260px;
+
+float: right;
+position: absolute;
+top: 80px;
+
+
+}
+
+.main ul.list-group#group-office{
+padding-top: 1px;
+margin-left: 600px;
+margin-right: 1px;
+width: 260px;
+
+float: right;
+position: absolute;
+top: 80px;
+
+
+}
+
+.main ul.list-group #label-prof{
+  padding: 10px;
+  text-align: center;
+
+}
+
+.main ul.list-group #label-org{
+  padding: 10px;
+  text-align: center;
+
+}
+
+.main ul.list-group #label-office{
+  padding: 10px;
+  text-align: center;
+
+}
+
+
+
+.list-group .badge{
+
+  margin-left: 10px;
+  margin-right: 20px;
+  float: left;
+}
+
+div.topPick-main{
+  position: relative;
+
+
+}
+
+
+
+.table-box{
+
+  /*margin-left: 20px;
+  margin-right: 500px;*/
+  table-layout: fixed;
+  column-width: 40px;
+  float: center;
+
+
+ 
+  width: 40%;
+}
+
+.panel-default{
+  margin-right: 630px;
+  padding: 10px;
+  text-align: center;
+
+
+}
+
+.eval{
+
+  margin-top: 280px;
+  margin-left: 343px;
+}
+
+.eval h3{
+  margin-right: 500px;
+}
+
+.top-body{
+}

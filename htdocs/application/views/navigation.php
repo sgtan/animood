@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 
  <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
@@ -35,7 +31,10 @@
                     
                     if($type == 1){
                        echo  '<li>';
-                       echo  '<a>Organization<span class="glyphicon glyphicon-chevron-down"></span></a>';
+                       echo  '<a>Organization';
+                           if($organizations != null) 
+                          echo '<span class="glyphicon glyphicon-chevron-down"></span>';
+                        echo'</a>';
                        echo '<ul class="nav nav-second-level collapse" id ="org">';
                         
                             $adminCounter = 0;
@@ -50,10 +49,12 @@
 
                                     echo  '<li><a href= "">Register Member</a></li>';
                                     echo  '<li><a class = "appoint-btn" href= "" data-org="'.$org->orgCode.'">Appoint Admin</a></li>';
-                                    echo  '<li><a href= "">Evaluation Summary</a></li>';
+                                    
 
                                     echo '</ul>';
                                 }
+                                else
+                                    echo'</a>';
                                 
 
                             echo '</li>';  
@@ -120,40 +121,4 @@
   
 
 
-<<<<<<< HEAD
-=======
-=======
-<div class = "navigation">
-			<div class="nav-div">
-				<ul id="nav-menu">
-					<li> 
-						Home
-					</li>
-					<li>
-						Logout
-					</li>
-					<li data-toggle="subjects" class="menu-toggle">SUBJECTS
-						<ul class="sub-menu" id="subjects" style="display:none">
-							<li>WEBAPPS</li>
-							<li>ALGOCOM</li>
-							<li>HCIFACE</li>
-						</ul>
-					</li>
-					<li data-toggle="organizations" class="menu-toggle">ORGANIZATIONS
-						<ul class="sub-menu" id="organizations" style="display:none">
-							<li>HTG</li>
-							<li>LSDC</li>
-							<li>La Salle Sports Commission of De La SAlle University</li>
-						</ul>
-					</li>
-					
-				</ul>
-			</div>
-				<div class="clearfix"> <!-- pag may float laging may clearfix -->                                                                                                     
-				</div>
-		</div>
-
-</div>
->>>>>>> 544f9ece8955b97bd363387097b4301cca7a0071
->>>>>>> 58f2816a83a0d5ff39fdeeb69238930b5748c06a
 

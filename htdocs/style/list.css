@@ -1,0 +1,14 @@
+.list{
+  float: left;
+}
+
+.list li{
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.list li:hover{
+  cursor: pointer; 
+  cursor: hand;
+}

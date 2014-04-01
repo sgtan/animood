@@ -34,9 +34,13 @@ class Account extends CI_Controller {
 			$this->session->set_userdata('firstname', $result->firstname);
 			$this->session->set_userdata('lastname', $result->lastname);
 			$this->session->set_userdata('type', $result->type);
+				redirect('');
+		}
+		else{
+			redirect('main/login_invalid');
 		}
 	
-		redirect('');
+	
 
 	
 	}
@@ -48,11 +52,11 @@ class Account extends CI_Controller {
 		
 		if(is_bool($regSuccess) == TRUE)
 			if($regSuccess == TRUE)
-				echo 'congratulations';
+				redirect('');
 			else 
 				echo 'error';
 		else
-			echo 'exist';
+			redirect('main/register_invalid');
 		
 
 	}

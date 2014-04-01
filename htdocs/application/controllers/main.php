@@ -30,6 +30,50 @@ class Main extends CI_Controller {
 		$this->load->view("login_view", $data);
 	}
 
+	public function login_invalid(){
+		$data['title'] = 'Animood';
+
+		$this->load->model('mood_model');
+		$data['mood'] = $this->mood_model->getMoodById($this->mood_model->getMoodOfTheDay());
+
+
+		$data['color'] = $this->mood_model->getMoodColorById($this->mood_model->getMoodOfTheDay());
+
+
+		$data['fontColor'] = '#ffffff';
+		$data['jumboColor'] = 'rgba(0,0,0,0.3)';
+		$this->load->view("login_invalid", $data);
+	}
+
+	public function register_invalid(){
+		$data['title'] = 'Animood';
+
+		$this->load->model('mood_model');
+		$data['mood'] = $this->mood_model->getMoodById($this->mood_model->getMoodOfTheDay());
+
+
+		$data['color'] = $this->mood_model->getMoodColorById($this->mood_model->getMoodOfTheDay());
+
+
+		$data['fontColor'] = '#ffffff';
+		$data['jumboColor'] = 'rgba(0,0,0,0.3)';
+		$this->load->view("register_invalid", $data);
+	}
+	public function register_success(){
+		$data['title'] = 'Animood';
+
+		$this->load->model('mood_model');
+		$data['mood'] = $this->mood_model->getMoodById($this->mood_model->getMoodOfTheDay());
+
+
+		$data['color'] = $this->mood_model->getMoodColorById($this->mood_model->getMoodOfTheDay());
+
+
+		$data['fontColor'] = '#ffffff';
+		$data['jumboColor'] = 'rgba(0,0,0,0.3)';
+		$this->load->view("register_success", $data);
+	}
+
 	public function main()
     {	
 
@@ -49,10 +93,99 @@ class Main extends CI_Controller {
 
  		if($data['type'] == 2){
    			$this->load->model('facultymain_model');
-   			$data['awesome'] = $this->facultymain_model->getMoodID1( $data['idnum']);
-   			$data['contented'] = $this->facultymain_model->getMoodID2( $data['idnum']);
-   			
-   		}
+   			$data['moodName'] = $this->facultymain_model->getMoodNames();
+
+   		/*	$data['moodData'] = $this->facultymain_model->getMoodID( $data['idnum','moodData']); */
+
+   		$moodData = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData[$moodid] = $this->facultymain_model->getMoodID($this->session->userdata('idnum'),$moodid); 
+			 }
+		  $data['moodData'] = $moodData;
+
+
+		$moodData2 = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData2[$moodid] = $this->facultymain_model->getMoodID2($this->session->userdata('idnum'),$moodid); 
+			 }
+		
+
+		  $data['moodData2'] = $moodData2;
+
+
+		  $moodData3 = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData3[$moodid] = $this->facultymain_model->getMoodID3($this->session->userdata('idnum'),$moodid); 
+			 }
+		
+
+		  $data['moodData3'] = $moodData3;
+
+
+		  	$moodData4 = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData4[$moodid] = $this->facultymain_model->getMoodID4($this->session->userdata('idnum'),$moodid); 
+			 }
+		  $data['moodData4'] = $moodData4;
+
+
+		$moodData5 = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData5[$moodid] = $this->facultymain_model->getMoodID5($this->session->userdata('idnum'),$moodid); 
+			 }
+		
+
+		  $data['moodData5'] = $moodData5;
+
+
+		  $moodData6 = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData6[$moodid] = $this->facultymain_model->getMoodID6($this->session->userdata('idnum'),$moodid); 
+			 }
+		
+
+		  $data['moodData6'] = $moodData6;
+
+		  $moodData7 = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData7[$moodid] = $this->facultymain_model->getMoodID7($this->session->userdata('idnum'),$moodid); 
+			 }
+		  $data['moodData7'] = $moodData7;
+
+
+		$moodData8 = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData8[$moodid] = $this->facultymain_model->getMoodID8($this->session->userdata('idnum'),$moodid); 
+			 }
+		
+
+		  $data['moodData8'] = $moodData8;
+
+
+		  $moodData9 = array();
+			 for($moodid = 1; $moodid <= 9; $moodid++){ 
+			 	$moodData9[$moodid] = $this->facultymain_model->getMoodID9($this->session->userdata('idnum'),$moodid); 
+			 }
+		
+
+		  $data['moodData9'] = $moodData9;
+
+
+
+		
+
+
+
+
+		 }
+
+   		
+		 $this->load->model('studentmain_model');
+ 		$data['topProf']  = $this->studentmain_model->getTopProf(); 
+
+ 		$data['topOffice']  = $this->studentmain_model->getTopOffice();
+
+ 		$data['topOrg']  = $this->studentmain_model->getTopOrg();
 
         $this->load->view("head", $data);
 		$this->load->view("header");
