@@ -3,7 +3,11 @@
 	
 
 		public function addMember($org, $id_num){
+<<<<<<< HEAD
 				$str_query = "INSERT INTO orgmember(orgCode,idnumber,type) VALUES('$org', $id_num, '2')"; 
+=======
+				$str_query = "INSERT INTO orgmember VALUES($org, $id_num, '2')"; 
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 
 				$query_result = $this->db->query($str_query); 
 

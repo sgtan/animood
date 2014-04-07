@@ -3,6 +3,7 @@ $(document).ready(initAddMember);
 
  
 function initAddMember(){
+<<<<<<< HEAD
 		$('#register-btn').click(register)
  }
 
@@ -41,3 +42,15 @@ function clearInput() {
  		
  } 
 
+=======
+
+	
+
+
+ }
+
+
+function clearInput() { 
+ 		
+ } 
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f

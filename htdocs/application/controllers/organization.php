@@ -9,6 +9,7 @@ class Organization extends CI_Controller {
 
 	public function register_member(){
 			
+<<<<<<< HEAD
 			$id_num = $this->input->post('idnumber');
 			$orgCode = $this->input->post('orgCode');
 			
@@ -24,6 +25,20 @@ class Organization extends CI_Controller {
 			} 
 			else
 				$this->output->set_status_header('501');
+=======
+			$id_num = $this->input->post('idnum');
+			$orgCode = $this->input->post('orgCode');
+			
+			$this->load->model('organization_model');
+			$addSuccess = $this->organization_model->addMember($orgCode, $id_num);
+			echo $id_num;
+
+			if($addSuccess == TRUE){ 
+				echo '<tr><td>'."1124".'</td><td>'.$id_num.'</td><td>'."1".'</td></tr>';
+
+			} 
+ 		 	else $this->output->set_header(); 
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 	}
 
 	public function load_member(){

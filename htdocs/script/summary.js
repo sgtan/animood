@@ -106,7 +106,11 @@ $(function () {
                 type: 'pie'
             },
             title: {
+<<<<<<< HEAD
                 text: 'Mood Summary'
+=======
+                text: 'Mood for Eval X'
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
             },
             plotOptions: {
                 pie: {

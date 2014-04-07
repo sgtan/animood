@@ -1,10 +1,18 @@
 #mood-pie{
+<<<<<<< HEAD
 	width: 100%; 
+=======
+	width: 500px; 
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 	height: 400px; 
 }
 
 #recommendation{
+<<<<<<< HEAD
 	width: 100%; 
+=======
+	width: 500px; 
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 	height: 400px; 
 	margin-left: 10px;
 }

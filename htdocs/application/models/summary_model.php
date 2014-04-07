@@ -24,6 +24,7 @@
 		}
 
 		public function getRecommendation($type){
+<<<<<<< HEAD
 			$this->db->select('*');
 			$this->db->from('recommendation');
 			if($type == 1){
@@ -38,6 +39,22 @@
 			} else if($type == 4){
 				$this->db->join('recommendation', 'recommendation.recommendationID = officerecommendationentry.recommendationId');
 				$this->db->join('evaluation', 'officerecommendationentry.evaluationId = officeevaluation.evaluationId');
+=======
+			$this->db->select('recommendation');
+			$this->db->from('recommendation');
+			if($type == 1){
+				$this->db->join('recommendationId', 'recommendation.recommendationId = recommendationentry.recommendationId');
+				$this->db->join('evaluationId', 'recommendationentry.evaluationId = evaluation.evaluationId');
+			} else if ($type == 2){
+				$this->db->join('recommendationId', 'recommendation.recommendationId = orgrecommendationentry.recommendationId');
+				$this->db->join('evaluationId', 'orgrecommendationentry.evaluationId = orgevaluation.evaluationId');
+			} else if($type == 3){
+				$this->db->join('recommendationId', 'recommendation.recommendationId = orgeventrecommendationentry.recommendationId');
+				$this->db->join('evaluationId', 'orgeventrecommendationentry.evaluationId = orgeventevaluation.evaluationId');
+			} else if($type == 4){
+				$this->db->join('recommendationId', 'recommendation.recommendationId = officerecommendationentry.recommendationId');
+				$this->db->join('evaluationId', 'officerecommendationentry.evaluationId = officeevaluation.evaluationId');
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 			}
 
 			$this->db->like('timestamp', date("Y-m-d"), 'after');

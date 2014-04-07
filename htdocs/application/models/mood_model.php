@@ -38,9 +38,14 @@
 		}
 
 		public function getMoodOfTheDay(){
+<<<<<<< HEAD
 			date_default_timezone_set('Asia/Manila');
 			$today = date("Y-m-d");
 
+=======
+			$today = date("Y-m-d");
+			
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 			$greatest = 0;
 			$greatestIndex =0;
 
@@ -62,8 +67,11 @@
 			else
 				return $greatestIndex;
 
+<<<<<<< HEAD
 			
 
+=======
+>>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 		}
 
 		public function getMoodCountStudentEval($mood, $date){
