@@ -50,27 +50,13 @@ class Content extends CI_Controller {
   		$data['question'] = $this->evaluation_model->getEvalQuestions($data['type']); 
   		$data['recommendation'] = $this->evaluation_model->getEvalRecom($data['type']);
   		$data['mood'] = $this->mood_model->getMood();
-<<<<<<< HEAD
-=======
-  		$data['color'] = $this->mood_model->getMoodColorById($this->mood_model->getMoodOfTheDay());
-
-
-		$data['idnum'] =  $this->session->userdata('idnum');
- 		$data['name'] =  $this->session->userdata('firstname'). " ".  $this->session->userdata('lastname');
-
-
-		$this->load->view("header", $data);
->>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 
   		$this->load->view('evaluation.php', $data);
 	}
 
 	public function register_member(){
 		$this->load->model('organization_model');
-<<<<<<< HEAD
 		$data['orgCode'] = $this->input->get('orgCode');
-=======
->>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 		 $data['org_members'] = $this->organization_model->getMembers($this->input->get('orgCode')); 
 		 $this->load->view("org_register", $data);
 	}
@@ -113,7 +99,6 @@ class Content extends CI_Controller {
 		$this->evaluation_model->insertAns($id, $data['question'], $data['answer'], $type);
 
 		$this->load->model('mood_model');
-<<<<<<< HEAD
 		
  		$arr = array();
 
@@ -126,16 +111,6 @@ class Content extends CI_Controller {
 		$json = json_encode($arr, JSON_FORCE_OBJECT);
 
 		echo $json;
-=======
-		$data['color'] = $this->mood_model->getMoodColorById($this->mood_model->getMoodOfTheDay());
-		
-		$data['idnum'] =  $this->session->userdata('idnum');
- 		$data['name'] =  $this->session->userdata('firstname'). " ".  $this->session->userdata('lastname');
-
-
-		$this->load->view("header", $data);
-		$this->load->view('summary.php');
->>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 	}
 
 	public function view_list(){
@@ -149,24 +124,11 @@ class Content extends CI_Controller {
 			$data['office'] = $this->office_model->getOfficeList();
 		}
 
-<<<<<<< HEAD
-=======
-		$this->load->model('mood_model');
-		$data['color'] = $this->mood_model->getMoodColorById($this->mood_model->getMoodOfTheDay());
-		
-		$data['idnum'] =  $this->session->userdata('idnum');
- 		$data['name'] =  $this->session->userdata('firstname'). " ".  $this->session->userdata('lastname');
-
-
-		$this->load->view("header", $data);
-		
->>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 		$this->load->view('list.php', $data);
 	}
 
 	public function faculty_main(){
 
-<<<<<<< HEAD
 		$this->load->model('facultymain_model');  
 		$data['moodName'] = $this->facultymain_model->getMoodNames();	
 
@@ -249,13 +211,5 @@ class Content extends CI_Controller {
 
   		$this->load->view('student_main.php', $data);	
 	}
-=======
-		$this->load->model('facultymain_model');
-		$data['awesome'] = $this->facultymain_model->getMoodID1($this->session->userdata('idnum'));
-		$data['contented'] = $this->facultymain_model->getMoodID2($this->session->userdata('idnum'));  
-	
-  		$this->load->view('faculty_main.php', $data);
-	}
->>>>>>> 6f43911c29a27dbe7133d4430f3bbf469fec4a2f
 }
 

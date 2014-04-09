@@ -42,7 +42,7 @@
 						</form>
 					</div>		
 					<div id="register-form-box" class="form-group">
-						<h2>New to <b>ANIMOOD</b>? Register now!</h2>						
+						<h2>New to <a href ="<?php echo base_url(); ?>animood.html" target = "_blank"><b>ANIMOOD</b></a>? Register now!</h2>						
 						<form id="register-form" method="post" action="<?php echo base_url(); ?>index.php/account/register">
 							<div class="form-group adj-form">
 								<div class="clearfix"></div>								
